@@ -1,0 +1,64 @@
+.outbox{
+	width: 70%;
+	margin: 0 auto;	
+}
+
+.smallbox{
+	height: 200px;
+	width: 200px;
+	margin: 5px;
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	font-weight: bolder;
+}
+.bigbox{
+	height: 200px;
+	width: 400px;
+	margin: 5px;
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	font-weight: bolder;
+}
+
+.b2{
+	background-color: darkgreen;	
+	
+}
+.b3{
+	background-color: purple;
+	}
+
+.b4{
+	background-color: blue;
+
+}
+.b6{
+	background-color: green;
+	
+}
+.b7{
+	background-color: yellow;
+}
+.b8{
+	background-color: orange;
+}
+	
+
+.b1{
+	background-color: red;
+	
+}
+
+.b5{
+	background-color: lightgreen;
+}
+
+.b9{
+	background-color: darkred;
+}
+
+p{
+	margin: 10px;
+}
