@@ -6,7 +6,7 @@
 	width: 560px;
 	border: 1px solid grey;
 	display: inline-block;
-	margin-bottom: 25;
+	margin-bottom: 25px;
 }
 .inbox{
 	width: 160px;
@@ -15,22 +15,11 @@
 	display: inline-block;
 	margin: 10px;
 }
-.inbox1{
-	width: 160px;
-	background: yellow;
-	height: 100px;
-	display: inline-block;
-	margin: 10px;
+.b1{
 	border: 10px solid black;
 }
-.inbox2{
-	width: 160px;
-	background: yellow;
-	height: 100px;
-	display: inline-block;
-	margin: 10px;
-	box-sizing: border-box;
-	border: 10px solid black;
+.b2{
+	box-sizing: border-box;	
 }
 
 hr{

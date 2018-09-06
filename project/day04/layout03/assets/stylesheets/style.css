@@ -1,25 +1,25 @@
 .outbox{
-	width: 70%;
-	margin: 0 auto;	
+	text-align: center;
+	margin: 0 auto;		
 }
 
-.smallbox{
-	height: 200px;
-	width: 200px;
+.com{
+    height: 200px;
 	margin: 5px;
 	display: inline-block;
 	vertical-align: top;
 	color: white;
 	font-weight: bolder;
 }
+
+
+.smal{
+	width: 200px;
+}
+
+
 .bigbox{
-	height: 200px;
-	width: 400px;
-	margin: 5px;
-	display: inline-block;
-	vertical-align: top;
-	color: white;
-	font-weight: bolder;
+	width: 400px;	
 }
 
 .b2{
