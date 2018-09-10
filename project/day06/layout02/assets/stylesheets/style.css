@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+}
+.logo {
+  position: absolute;
+  padding: 30px;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  z-index: 10;
+}
+.bcolor{
+	background-color: grey;
+    height: 100px;
+}
+nav{
+	background-color: black
+}
+.nav{
+	display: inline-block;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+}
+h1{
+	font-size: 40px;
+	font-weight: bolder;
+	padding: 20px;
+}
+.para{
+	padding: 20px;
+
+}
+.cat{
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	size: 500px;
+}

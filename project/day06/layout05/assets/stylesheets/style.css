@@ -1,0 +1,39 @@
+/*CSS Resets*/
+
+
+/*Main CSS*/
+body{
+	margin: 0
+}
+/*Header*/
+.nav{
+	display: inline-block;
+	background-color: lightblue;
+	width: 24%;
+	text-align: center;
+	height: 50px;
+	padding: 3px;
+	margin-top: 12px;
+	font-weight: bolder;
+	font-color: blue;
+	font-size: 25px;
+}
+
+.navbar{
+	background-color: lightblue;
+}
+.body{
+	width: 600px;
+	margin: 0 auto;
+	color: red;
+	text-align: center;
+}
+.logo{
+	width: 100%;
+}
+
+.img{
+	display: inline-block;
+	text-align: center;
+	width: 24%
+}

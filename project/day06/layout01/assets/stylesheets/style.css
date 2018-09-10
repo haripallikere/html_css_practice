@@ -1,0 +1,29 @@
+.fleft{
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.fright{
+  float: right;
+}
+.nfnw{
+  height: 0px;
+  background-color: pink;
+  border: 10px solid orange;
+  outline: 2px solid red;
+}
+
+.blue-box{
+  margin: 10px;
+  height: 60px;
+  background: lightblue;
+  margin-bottom: 0px 0px 5px 0px;
+}
+.hr1 {
+  margin-top: 110px; 
+}
+
+.box{
+  size: 50px;
+  background: lightblue;
+}

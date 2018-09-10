@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+}
+.pink{
+	display: inline-block;
+	background-color: lightpink;
+	vertical-align: top;
+}
+.blue{
+	background-color: lightblue;
+}
+.block{
+	display: inline-block;
+	width: 49%;
+	margin: 0%;
+}
