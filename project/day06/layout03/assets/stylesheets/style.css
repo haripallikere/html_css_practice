@@ -3,10 +3,9 @@ header{
 	font-size: 40px;
     font-weight: bold;
     text-align: center;
-	
-}
+    /*padding: 10px 35px;*/
+	}
 .inline{
-	
 	width: 45%;
 	background-color: lightcoral;
 	display: inline-block;
@@ -16,8 +15,8 @@ header{
 	box-sizing: border-box;
 	padding: 1%;
 	border: 1px solid red;	
+	line-height: 20px;
 }
-
 .float{
 	width: 45%;
 	background-color: springgreen;
@@ -28,10 +27,15 @@ header{
 	box-sizing: border-box;
 	padding: 1%;
 	border: 1px solid green;
+	line-height: 20px;
 }
 
 .fifty{
 	width: 50%;
+}
+.highlight{
+	background-color: white;
+	padding: 2px;
 }
 
 

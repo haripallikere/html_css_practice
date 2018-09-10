@@ -13,4 +13,7 @@ body{
 	display: inline-block;
 	width: 49%;
 	margin: 0%;
+	padding: 10px;
+	box-sizing: border-box;
+	line-height: 25px;
 }
