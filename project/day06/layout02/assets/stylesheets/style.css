@@ -2,20 +2,23 @@ body{
 	margin: 0;
 }
 .logo {
-  position: absolute;
-  padding: 30px;
+  padding: 0 30px;
   display: inline-block;
   font-size: 40px;
   font-weight: bolder;
   color: white;
   z-index: 10;
 }
-.bcolor{
+.header{
 	background-color: grey;
     height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 nav{
-	background-color: black
+	background-color: black;
+	margin-top: 100px;
 }
 .nav{
 	display: inline-block;
