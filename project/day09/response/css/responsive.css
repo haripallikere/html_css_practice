@@ -1,0 +1,46 @@
+.one-third {
+	width: 30%;
+}
+
+.one-third-second {
+	margin: 0;
+	width: 40%;
+}
+
+.one-third-last {
+	clear: both;
+	float: none;
+	width: auto;
+	padding: 20px 10px 0;
+
+}	
+
+.nav a {
+	width: 25%;
+	border-bottom: 2px solid #666;
+}
+
+@media screen and (max-width: 620px) {
+	.nav a {
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	.nav a {
+		width: 50%;
+		font-size: 70%;
+	}
+	
+	.mobile-collapse {
+		width: auto;
+		margin-right: 5px;
+
+	}
+	
+	.hide-mobile {
+		display: none;
+	}
+		
+}

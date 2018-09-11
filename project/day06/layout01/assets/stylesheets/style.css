@@ -9,6 +9,7 @@ section{
 
 hr{
   margin-top: 40px; 
+  clear: both;
 }
 img{
   /*font-size: 0;*/
@@ -29,6 +30,7 @@ img{
   border: 20px solid orange; 
   outline: 5px solid red;
   font-size: 0;
+  display: block;
 }
 
 .bluebox{
@@ -40,8 +42,23 @@ img{
   clear: both;
 }
 
-/*.box{
+.box{
   background: lightblue;
-}*/
-
-
+  height: 100px;
+  width: 100px;
+  /*display: inline-block;*/
+  margin: 10px;
+}
+.clear{
+  clear: both
+}
+.clearf{  
+     *zoom: 1;
+}
+.clearf:before, .clearf:after {
+  content: " ";
+  display: table;
+}
+.clearf:after {
+  clear: both;
+}
