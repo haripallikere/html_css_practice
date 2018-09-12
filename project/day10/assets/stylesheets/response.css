@@ -1,0 +1,45 @@
+.third-section{
+	width: auto;
+	
+}
+.main-section{
+	width: 100%;
+	margin-right: 30px;
+}
+.sub-section{
+	width: 100%;
+	margin: 0;
+	margin-top: 15px;
+}
+
+.navigation{
+	width: 100%;
+	display: block;
+	float: none;
+	text-align: center;
+}
+
+.nav a{
+ 	width: 100%;
+ 	font-size: 20px;
+ 	border-bottom: 1px solid #444;
+ 	margin-bottom: 0.2em;
+ 	background-color: lightgrey;
+ }
+ .demo{
+ 	display: block;
+ }
+.logo{
+    width: 100%;
+}
+.collapse{
+	display: inline-block;
+}
+.skip{
+	width: 100%;
+	background-color: lightblue;
+	text-align: center;
+	padding: 5px;
+}
+
+
