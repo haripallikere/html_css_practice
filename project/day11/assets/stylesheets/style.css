@@ -1,0 +1,294 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*END*/
+/*MAIN BODY*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+span{
+    color: white;
+    font-size: 20px;
+}
+
+
+.padding{
+
+    padding: 30px;
+}
+.header{
+  position: absolute;;
+    color: red;
+    z-index: 1;
+    width: 100%
+}
+
+
+.logo{
+    color: #fff;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 100%;
+    font-size: 1em;
+
+}
+
+.sidebar{
+   color: red;
+   display: inline-block;
+}
+
+.menu {
+  float: right;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
+.nav{
+   width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+
+}
+.banner{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.banner-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.header-text{
+  color: #fff;
+  font-weight: bolder;
+  font-size: 4em;
+  margin-bottom: 30px;
+  font-family: cursive;
+}
+.header-para {
+  color: white;
+  font-size: 1.30em;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: serif;
+}
+.btnmain{
+    background-color: #3498db;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 50px;
+
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: blue;
+    display: inline-block;
+}
+h2{
+  font-size: 2em;
+}
+.about-para{
+  font-size: 1em;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.round-image1{
+
+    width: 25%;
+    display: inline-block;
+}
+.about1{
+    width: 62%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+.image1{
+    border-radius: 50%;
+    border: 2px double grey;
+    width: 100%;
+}
+.btn{
+    width: 130px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 12px;
+    color: white;
+    font-size: .90em
+
+}
+.blue{
+    background-color: #3498db;
+}
+.round-image{
+    width: 30%;
+    display: inline-block;
+    padding: 30px;
+}
+.about3{
+    text-align: center;
+    margin: 0 auto;
+}
+.about-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social-media{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.socialicons{
+    width: 200px;
+    height: auto;
+}
+
+.btn-white{
+     width: 130px;
+    height: 50px;
+    background-color: white;
+    border-radius: 12px;
+    color: white;
+    font-size: .90em
+    font-color: #3498db;
+
+}
+.about-para{
+  font-size: 1em;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn-blue{
+    color: #3498db;
+}
+.white{
+    color: #fff;
+}

@@ -1,0 +1,39 @@
+@media screen and (max-width: 520px)
+{
+	.round-image1{
+		width: 100%;
+	}
+	.round-image{
+		width: 100%;
+	}
+	.about1{
+		width: 100%;
+	}
+.btn{
+	width: 90%;
+}
+.btnmain{
+	width: 100%;
+}
+.banner{
+	width: 100%;
+}
+.banner-text{
+	width: 80%;
+}
+.header-text{
+	font-size: .50em;
+}
+.header-para{
+	font-size: .90em
+}
+.banner-image{
+	overflow: none;
+}
+.logo{
+	width: 100%;
+}
+.logo{
+	font-size: 1em;
+}
+}
