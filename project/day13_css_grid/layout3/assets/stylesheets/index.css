@@ -1,0 +1,267 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*END*/
+/*  body section*/
+body{
+  font-size: 16px;
+  width: 100%
+  background-color: blue;
+}
+img{
+  width: 
+}
+h1{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+h2{
+  padding: 10px;
+}
+p{
+  margin: 20px 0;
+  padding: 10px;
+}
+.wrapper{
+  width: 100%;
+  margin: 0 auto; 
+  background-color: #006699;
+}
+.hero{
+  display: grid;
+  margin: 30px 40px;
+  padding: 10px 40px;
+  border: 2px solid blue;
+  background-color: white;
+}
+.nav{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0 20px;
+}
+a{
+  text-decoration-line: none;
+  color: lightblue;
+}
+img{
+  width: 50%;
+  height: auto;
+}
+/*main*/
+
+.section_wrapper{
+  display: grid;
+  grid-gap: 40px;
+  padding-bottom: 40px;
+  padding: 0 40px;
+  grid-template-areas: 
+    "sm-box-1 big-box sm-box-2"
+    "md-box big-box sm-box-3"
+    "md-box big-box sm-box-4"
+}
+.sm-box-1{
+  display: grid;
+  grid-area: sm-box-1;
+  background-color: white;
+}
+.big-box{
+  display: grid;
+  grid-area: big-box;
+  background-color: white;
+  margin-bottom: 40px;
+}
+.md-box{
+  display: grid;
+  grid-area: md-box;
+  background-color: white;
+  margin-bottom: 40px;
+}
+.sm-box-2{
+  display: grid;
+  grid-area: sm-box-2; 
+  background-color: white;
+}
+.sm-box-3{
+  display: grid;
+  grid-area: sm-box-3;
+  background-color: white;
+  /*margin: 10px;*/
+}
+.sm-box-4{
+  display: grid;
+  grid-area: sm-box-4;
+  margin-bottom: 40px;
+  background-color: white;
+}
+.round-cat{
+  border-radius: 60%;
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+}
+.red{
+  background-color: red;
+  padding: 10px;
+  color: white;
+}
+span{
+  color: red;
+  padding: 10px;
+}
+.blue{
+  background-color: #0099ff;
+  padding: 10px;
+}
+.graph{
+  padding-left: 80px;
+}
+
+/*media query*/
+@media screen and (max-width:760px)
+{
+  .section_wrapper
+  {
+  display: grid;
+  grid-gap: 10px;
+  padding-bottom: 40px;
+  padding: 0 40px;
+  grid-template-areas: 
+    "sm-box-1 sm-box-2"
+    "md-box sm-box-3"
+    "md-box sm-box-4"
+    "big-box none"
+  }
+
+  
+}
+
+@media screen and (max-width: 540px)
+{
+  .section_wrapper
+  {
+  display: grid;
+  grid-gap: 10px;
+  padding-bottom: 40px;
+  padding: 0 40px;
+  grid-template-areas: 
+    "sm-box-1"
+    "md-box"
+    "big-box"
+    "sm-box-2"
+    "sm-box-3"
+    "sm-box-4"
+  }
+  .nav{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /*padding: 10px;*/
+}
+a{
+  font-size: .65rem;
+  color: black;
+  padding-left: 4px;
+}
+
+
+}
