@@ -101,6 +101,8 @@ input, select {
     vertical-align:middle;
 }
 /*END*/
+
+
 /*  body section*/
 body{
   font-size: 16px;
@@ -114,7 +116,7 @@ p{
 .css-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 60px 200px 60px;
+    grid-template-rows: 80px 400px 80px;
 }
 
 .header {
@@ -155,12 +157,14 @@ p{
     color: white;
 }
 
+/*response ************/
+
 @media screen and (max-width:760px){
 
 .css-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12,1fr 2fr 6fr 2fr 1fr);
+    grid-template-rows: repeat(5,80px 150px 300px 150px 80px);
 }
 .mid{
   grid-column: 1 / -1;

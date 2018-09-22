@@ -101,6 +101,8 @@ input, select {
     vertical-align:middle;
 }
 /*END*/
+
+
 /*  body section*/
 body{
   font-size: 16px;
@@ -147,7 +149,9 @@ img{
   width: 50%;
   height: auto;
 }
-/*main*/
+
+
+/*main******************/
 
 .section_wrapper{
   display: grid;
@@ -232,8 +236,6 @@ span{
     "md-box sm-box-4"
     "big-box none"
   }
-
-  
 }
 
 @media screen and (max-width: 540px)
@@ -244,6 +246,7 @@ span{
   grid-gap: 10px;
   padding-bottom: 40px;
   padding: 0 40px;
+  justify-content: center;
   grid-template-areas: 
     "sm-box-1"
     "md-box"
@@ -255,7 +258,6 @@ span{
   .nav{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /*padding: 10px;*/
 }
 a{
   font-size: .65rem;
