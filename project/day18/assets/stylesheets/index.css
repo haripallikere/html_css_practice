@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+* {
+  box-sizing: border-box;
+}
+body{
+  font-size: 16px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+/*header*/
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+.header{
+  background-color: blue;
+  width: 100%;
+}
+.sub1 h1{
+  font-size: 4vmin;
+  color: white;
+}
+a {
+  color: white;
+  font-size: 4vmin;
+  text-decoration: none;
+  display: inline-block;
+}
+.sub1{
+  width: 49%;
+  text-align: center;
+  display: inline-block;
+}
+.sub2{
+  width: 49%;
+  text-align: center;
+  display: inline-block;
+}
+.navigation li{
+  display: inline-block;
+  padding: 15px;
+}
+/*logo*/
+.logo{
+  text-align: center;
+  background-color: lightgreen;
+  height: 400px;
+}
+.logo-img{
+  margin-top: 40px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.logo h1{
+  margin: 15px 0;
+  font-size: 2em;
+}
+/*main*/
+/*portfolio*/
+.portfolio-wrapper{
+  width: 80%;
+  margin: 25px auto;
+  text-align: center;
+  /*background-color: lightblue;*/
+}
+.portfolio-wrapper h1{
+  font-size: 2.5em;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.portfolio-grid{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 30px;
+}
+/*about*/
+.about{
+  margin: 0 auto;
+  text-align: center;
+  background-color: lightgreen;
+  color: white;
+  padding: 25px;
+}
+
+.about h1{
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+.about-sub{
+  width: 80%;
+  margin: 20px auto;
+}
+.about-sub-para{
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+
+}
+.btn{
+  width: 120px;
+  height: 40px;
+}
+.btn a {
+  color: black;
+}
+/*contact me*/
+input,textarea {
+  margin: 10px auto;
+  display: block;
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.registration{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2{
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+.btn-in{
+  text-align: center;
+  background-color: darkgreen;
+  color: white;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+/*iframe*/
+.iframe{
+  width: 80%;
+  margin: 0 auto;
+}

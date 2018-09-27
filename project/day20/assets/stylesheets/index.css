@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body{
+  font-size: 16px;
+  background-color: #f2f2f2;
+}
+h1{
+  color: grey;
+  font-size: 2.5em;
+}
+h4{
+  margin-bottom: 5px;
+  font-size: .80em;
+}
+span{
+  color: grey;
+}
+header{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* border: 2px solid black; */
+  padding: 20px;
+}
+form{
+  display: flex;
+}
+select{
+  width: 10vw;
+}
+.fet{
+  width: 12vw;
+}
+.sub-form{
+  margin: 10px 5px;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.image{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: wrap;
+  text-align: center;
+}
+.item3{
+  flex: 1 1 18%;
+  background-color: white;
+  padding-bottom: 8px;
+}
+.image > * {
+  border: 1px dotted silver;
+}
+@media screen and (max-width:640px)
+{
+  .item3{
+    flex: 1 1 23%;
+    order: 99;
+  }
+  .item2{
+    order: 1;
+    flex: 1 1 45%;
+
+  }
+  select{
+    width: 15vw;
+  }
+  .fet{
+    width: 16vw;
+  }
+
+
+}

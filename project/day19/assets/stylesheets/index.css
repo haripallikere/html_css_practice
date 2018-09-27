@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body{
+  font-size: 16px;
+}
+/*typography*/
+h1,h3,h4,h5 {
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 0 0.5em 0;
+    font-size: 3.4em;
+}
+h2{
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 0.5em 0;
+    font-size: 1.6em; 
+
+}
+
+/*sidenav*/
+.sidenav{
+  height: 100vh;
+  width: 20em;
+  text-align: right;
+  position: fixed;
+  cursor: crosshair;
+  overflow-x: hidden;
+  left: 0;
+  top: 0;
+  padding: 1em 1em 0.5em 1em ;
+  overflow-y: auto;
+  z-index: 1;
+  background-color: #312450;
+  padding-top: 80px;
+}
+.sidenav li{
+  margin: 30px 0;
+}
+.sidenav a {
+  text-decoration: none;
+  padding: 20px 8px 8px 8px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1em;
+  letter-spacing: .10em;
+  color: rgba(255, 255, 255, 0.35);
+  position: relative;
+  font-weight: bold;
+  display: block;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid red;
+}
+.sidebar nav a:before, .sidebar nav a:after {
+  border-radius: 1em;
+  bottom: 0;
+  content: '';
+  height: 0.2em;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.sidenav nav a:before {
+  background: #3c2c62;
+}
+
+.sidenav nav a:after {
+        
+  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  transition: max-width 0.2s ease;
+  max-width: 0;
+}
+
+.sidenav nav a:hover {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/*intro*/
+.intro{
+  background-color: #5e42a6;
+  position: relative;
+  padding: 2em 2em 2em 2em;
+  max-width: 100%;
+  height: 100vh;
+}
+.intro-ome{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-40%);
+  right: 0;
+  bottom: 0;
+  padding: 100px;
+  width: 60%;
+  margin-left: 5%;
+
+}
+.intro-ome p{
+  font-size: 1.9em;
+  margin: 50px 0;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: .05em;
+  line-height: 1em;
+} 
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  letter-spacing: .20em;
+}
+.btn{
+  background-color: #5e42a6;
+  border-radius: 23px;
+  border: .50px solid white;
+  padding: 10px;
+  width: 13vw;
+  height: 8vh;
+}
+
+.btn a:hover {
+  color: rgba(255, 255, 255, 0.55);
+}
+/*content*/
+.content{
+  background-color: #5052b5;
+  position: relative;
+  /*padding: 2em 2em 2em 2em;*/
+  max-width: 100%;
+  height: 60vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+.content-one{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-31%);
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  margin-left: 5%;
+  height: 60vh;
+  max-width: 100%;
+
+}
+.img-siz{
+  width: 60vh;
+  height: 60vh;
+}
+.img-one {
+  height: 100vh;
+  display: inline-block;
+}
+.side-note-one {
+  height: 100vh;
+  width: 40%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 30px;
+  padding: 10px 20px 10px 10px;
+}
+.side-note-one p{
+  margin: 30px 0;
+}
+.btn-con{
+  background-color: #5052b5;
+  border-radius: 20px;
+  border: .50px solid white;
+  padding: 10px;
+  width: 12vw;
+}
+
+.btn-con a:hover {
+  color: rgba(255, 255, 255, 0.55);
+}
+.btn-con a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+/*about*/
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-rows: repeat(6, 50vh);
+}
+.list{
+  background-color: #b74e91;
+  display: grid;
+  border: .50px solid white;
+  box-sizing: border-box;
+  padding: 35px;
+  grid-template-columns: 5vw 1fr;
+}
+.about{
+  height: 200vh;
+   position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-40%);
+  right: 0;
+  bottom: 0;
+  padding: 100px;
+  width: 60%;
+  margin-left: 5%;
+
+}
+.intro-about{
+  background-color: #b74e91;
+  position: relative;
+  padding: 2em 2em 2em 2em;
+  max-width: 100%;
+  height: 200vh;
+}
+span{
+  font-size: 50px;
+  color: white;
+}
+.text{
+  margin-top: 20px;
+}
