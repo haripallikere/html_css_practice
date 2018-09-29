@@ -1,5 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
+
+   /* http://meyerweb.com/eric/tools/css/reset/
    License: none (public domain)
 */
 
@@ -126,5 +126,29 @@ img{
     width: 16vw;
   }
 
+
+}
+@media screen and (max-width:480px)
+{
+  .item3 {
+    flex: 100%;
+    justify-content: flex-end;
+  }
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.form{
+  flex: 100%;
+  flex-flow: row;
+  justify-content: flex-end;
+
+}
+h1{
+  display: block;
+  flex: 100%;
+  text-align: center;
+}
 
 }
