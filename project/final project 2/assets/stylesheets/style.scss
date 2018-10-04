@@ -1,0 +1,370 @@
+@import "vars";
+   /* http://meyerweb.com/eric/tools/css/reset/
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+}
+body{
+	font-size: 16px;
+}
+.pad{
+	padding: 20px;
+}
+/*
+  ========================================
+  PortFolio
+  ========================================
+*/
+.portfolio{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+		width: 100%;
+}
+.main-img{
+		min-width: 50%;
+  height: 70vh;
+}
+.pos-h{
+	position: absolute;
+	z-index: 10;
+	top:6%;
+	left: 8%;
+	font-size: 1.5rem;
+}
+.pos{
+	position: relative;
+}
+.active{
+	color: $secondary-color;
+}
+.about-me{
+  min-width: 50%;
+		height: 70vh;
+		padding: 20px;
+  position: relative;
+  background-color: wheat;
+}
+li, .menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 10px;
+  padding: 5px;
+}
+.media-menu{
+	display: none;
+}
+.main-img_1{
+  width: 100%;
+  height: 100%;
+}
+.about-me_main{
+		position: absolute;
+		width: 70%;
+		margin-left: 25px;
+  top: 20%;
+		left: 10%;
+		padding: 25px;s
+		h1{
+			font-size: .80rem;
+		}
+		h2{
+			font-size: 1.66rem;
+			margin: 20px 0;
+		}
+		p{
+			margin: 10px 0;
+			color: grey;
+		}
+		button{
+			margin: 10px;
+			height: 2rem;
+			width: 30%;
+			border: 2px solid black;
+			border-radius: 15px;
+			background-color: transparent;
+		}
+		span{
+			font-weight: 800;
+		}
+}
+/*
+  ========================================
+  portfolio-two
+  ========================================
+*/
+.portfolio-two{
+	height: 40vh;
+	padding: 25px;
+	h2{
+		font-size: 1.8rem;
+		margin-bottom: 20px;
+	}
+	span{
+		font-size: .80rem;
+		color: $secondary-color;
+	}
+	p{
+		margin: 25px 0;
+		color: gray;
+	}
+}
+.sub{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.portfolio-two_skills{
+	background-color: $secondary-color;
+	padding: 25px;
+	h2{
+		font-size: 2rem;
+		color: azure;
+	}
+	p{
+		color: azure;
+		margin: 20px 0;
+	}
+
+}
+.stats{
+	height: 4px;
+	width: 80%;
+	margin: 5px;
+	background-color: blanchedalmond;
+	.stats-sub{
+		height: 4px;
+		width: 70%;
+		background-color: black;
+
+	}
+}
+.stats-sub-m{
+	height: 4px;
+	width: 40%;
+	background-color: black;
+}
+/*
+  ========================================
+  portfolio-three
+  ========================================
+*/
+.portfolio-three {
+		height: 40vh;
+		text-align: center;
+		h3{
+			color: grey;
+			margin: 20px 0;
+		}
+		p{
+			color: grey;
+		}
+		
+		.portfolio-three_one{
+			background-color: $primary-color;
+	
+		}
+		.portfolio-three_two{
+			background-color: $secondary-color;
+		}
+		.fas{
+			font-size: 30px;
+			color: wheat;
+		}
+}
+.portfolio-three_three{
+	background-color: black;
+	color: whitesmoke;
+}
+/*
+  ========================================
+  portfolio-four and five
+  ========================================
+*/
+.portfolio-four{
+	height: 50vh;
+}
+.p-f-c {
+	background-color: $primary-color;
+	// height: 50vh;
+	i {
+		font-size: 30px;
+		color: wheat;
+	}
+	time{
+		font-size: .8rem;
+		color: black;
+	}
+	h3,p,span,h2{
+		color: wheat;
+	}
+	h2{
+		font-size: 2rem;
+	}
+	h6{
+		margin: 20px 0;
+	}
+ p{
+		margin: 25px 0;
+	}
+} 
+.p-f-c-e{
+	margin: 25px 0;
+}
+// portfolio-six
+.portfolio-six{
+	background-color: $primary-color;
+	height: 45vh;
+	h2,p {
+		color: aliceblue;
+	}
+	button{
+		width: 25%;
+		border-radius: 12px;
+		border: 0;
+		background-color: whitesmoke;
+		height: 25px;
+		margin: 20px 0;
+	}
+}
+.ptss{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+textarea,input{
+	display: block;
+	width: 90%;
+	margin: 20px 0;
+	outline: 0;
+	background-color: $primary-color;
+	border: 0;
+	border-bottom: 1px solid wheat;
+}
+textarea{
+	height: 70px;;
+}
+.portfolio-six-sub{
+
+	background-color: black;
+	h6,h3,p{
+		color: wheat;
+}
+h6,h3{
+	font-size: 1.5rem;
+}
+p{
+	margin: 25px 0;
+}
+span{
+	color: orange;
+	padding-left: 10px;
+}
+}
+/*
+  ========================================
+  footer map
+  ========================================
+*/
+.footer-map{
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	text-align: center;
+	background-color: $primary-color;
+
+	iframe {
+		margin: 0 auto;
+		width: 100%;
+		height: 100;
+	}
+}
+/*
+  ========================================
+  footer
+  ========================================
+*/
+footer{
+	width: 100%;
+	display: grid;
+	text-align: center;
+	height: 20vh;
+	.footer-icons{
+		margin: 25px 0;
+	}
+	span{
+		padding: 25px;
+	}
+	i{
+		font-size: 20px;
+	}
+}
+.footer-copyright{
+	margin: 45px 0;
+}
+
+@media (max-width: 768px){
+	.portfolio {
+		grid-template-columns: 1fr;
+		h1{
+			display: none;
+		}
+	}
+	.media-menu{
+		display: block;
+	}
+	.media-menu_{
+		display: grid;
+		grid-template-columns: auto 1fr;
+  margin-left: 10px;
+		padding: 5px;
+		justify-items: end;
+	}
+.sub {
+	grid-template-columns: 1fr;
+}
+}
