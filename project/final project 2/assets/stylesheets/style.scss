@@ -67,7 +67,7 @@ body{
 }
 .main-img{
 		min-width: 50%;
-  height: 70vh;
+  height: 100%;
 }
 .pos-h{
 	position: absolute;
@@ -84,8 +84,8 @@ body{
 }
 .about-me{
   min-width: 50%;
-		height: 70vh;
-		padding: 20px;
+  height: 500px;
+  padding: 20px;
   position: relative;
   background-color: wheat;
 }
@@ -107,8 +107,11 @@ li, .menu{
 		position: absolute;
 		width: 70%;
 		margin-left: 25px;
-  top: 20%;
+        top: 20%;
 		left: 10%;
+		bottom: 0;
+		right: 0;
+		transform: translate(-10%,-8%);
 		padding: 25px;s
 		h1{
 			font-size: .80rem;
@@ -124,7 +127,7 @@ li, .menu{
 		button{
 			margin: 10px;
 			height: 2rem;
-			width: 30%;
+			max-width: 10rem;;
 			border: 2px solid black;
 			border-radius: 15px;
 			background-color: transparent;
@@ -139,7 +142,7 @@ li, .menu{
   ========================================
 */
 .portfolio-two{
-	height: 40vh;
+	height: 80%;
 	padding: 25px;
 	h2{
 		font-size: 1.8rem;
@@ -194,7 +197,6 @@ li, .menu{
   ========================================
 */
 .portfolio-three {
-		height: 40vh;
 		text-align: center;
 		h3{
 			color: grey;
@@ -226,7 +228,7 @@ li, .menu{
   ========================================
 */
 .portfolio-four{
-	height: 50vh;
+	height: 100%;
 }
 .p-f-c {
 	background-color: $primary-color;
@@ -258,7 +260,7 @@ li, .menu{
 // portfolio-six
 .portfolio-six{
 	background-color: $primary-color;
-	height: 45vh;
+	height: 100%;
 	h2,p {
 		color: aliceblue;
 	}
@@ -298,11 +300,11 @@ h6,h3{
 	font-size: 1.5rem;
 }
 p{
-	margin: 25px 0;
+	margin: 15px 0;
 }
 span{
 	color: orange;
-	padding-left: 10px;
+	padding-left: 5px;
 }
 }
 /*
@@ -311,16 +313,13 @@ span{
   ========================================
 */
 .footer-map{
-	width: 100%;
-	height: 100%;
+	grid-column: 1 / -1;
 	padding: 30px;
-	text-align: center;
 	background-color: $primary-color;
 
 	iframe {
-		margin: 0 auto;
 		width: 100%;
-		height: 100;
+		height: 500px;
 	}
 }
 /*
@@ -330,9 +329,9 @@ span{
 */
 footer{
 	width: 100%;
-	display: grid;
-	text-align: center;
 	height: 20vh;
+	grid-column: -1 / 1;
+	text-align: center;
 	.footer-icons{
 		margin: 25px 0;
 	}
@@ -367,4 +366,9 @@ footer{
 .sub {
 	grid-template-columns: 1fr;
 }
+.response{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
 }

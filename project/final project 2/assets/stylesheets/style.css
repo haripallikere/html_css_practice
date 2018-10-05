@@ -65,7 +65,7 @@ body {
 
 .main-img {
   min-width: 50%;
-  height: 70vh; }
+  height: 100%; }
 
 .pos-h {
   position: absolute;
@@ -82,7 +82,7 @@ body {
 
 .about-me {
   min-width: 50%;
-  height: 70vh;
+  height: 500px;
   padding: 20px;
   position: relative;
   background-color: wheat; }
@@ -107,6 +107,9 @@ li, .menu {
   margin-left: 25px;
   top: 20%;
   left: 10%;
+  bottom: 0;
+  right: 0;
+  transform: translate(-10%, -8%);
   padding: 25px; }
   .about-me_main s
   h1 {
@@ -120,7 +123,7 @@ li, .menu {
   .about-me_main button {
     margin: 10px;
     height: 2rem;
-    width: 30%;
+    max-width: 10rem;
     border: 2px solid black;
     border-radius: 15px;
     background-color: transparent; }
@@ -133,7 +136,7 @@ li, .menu {
   ========================================
 */
 .portfolio-two {
-  height: 40vh;
+  height: 80%;
   padding: 25px; }
   .portfolio-two h2 {
     font-size: 1.8rem;
@@ -180,7 +183,6 @@ li, .menu {
   ========================================
 */
 .portfolio-three {
-  height: 40vh;
   text-align: center; }
   .portfolio-three h3 {
     color: grey;
@@ -205,7 +207,7 @@ li, .menu {
   ========================================
 */
 .portfolio-four {
-  height: 50vh; }
+  height: 100%; }
 
 .p-f-c {
   background-color: #f46542; }
@@ -229,7 +231,7 @@ li, .menu {
 
 .portfolio-six {
   background-color: #f46542;
-  height: 45vh; }
+  height: 100%; }
   .portfolio-six h2, .portfolio-six p {
     color: aliceblue; }
   .portfolio-six button {
@@ -263,10 +265,10 @@ textarea {
   .portfolio-six-sub h6, .portfolio-six-sub h3 {
     font-size: 1.5rem; }
   .portfolio-six-sub p {
-    margin: 25px 0; }
+    margin: 15px 0; }
   .portfolio-six-sub span {
     color: orange;
-    padding-left: 10px; }
+    padding-left: 5px; }
 
 /*
   ========================================
@@ -274,15 +276,12 @@ textarea {
   ========================================
 */
 .footer-map {
-  width: 100%;
-  height: 100%;
+  grid-column: 1 / -1;
   padding: 30px;
-  text-align: center;
   background-color: #f46542; }
   .footer-map iframe {
-    margin: 0 auto;
     width: 100%;
-    height: 100; }
+    height: 500px; }
 
 /*
   ========================================
@@ -291,9 +290,9 @@ textarea {
 */
 footer {
   width: 100%;
-  display: grid;
-  text-align: center;
-  height: 20vh; }
+  height: 20vh;
+  grid-column: -1 / 1;
+  text-align: center; }
   footer .footer-icons {
     margin: 25px 0; }
   footer span {
@@ -321,6 +320,10 @@ footer {
     justify-items: end; }
 
   .sub {
+    grid-template-columns: 1fr; }
+
+  .response {
+    display: grid;
     grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=style.css.map */
