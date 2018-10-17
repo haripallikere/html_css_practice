@@ -1,0 +1,333 @@
+   /* http://meyerweb.com/eric/tools/css/reset/
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+.pad {
+  padding: 20px; }
+
+/*
+  ========================================
+	Header
+  ========================================
+*/
+.nav-header {
+  width: 100%;
+  z-index: 100;
+  height: 80px;
+  padding: .20rem;
+  background-color: transparent;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
+
+.nav-fixed {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px; }
+  .container .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto; }
+  .container .toggle-screen {
+    display: none; }
+  .container img {
+    height: 80px;
+    width: 80px;
+    padding-bottom: 10px; }
+  .container li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    color: grey;
+    padding-bottom: 10px; }
+  .container li:hover {
+    color: white; }
+  .container span {
+    align-self: center;
+    margin-left: .50rem;
+    font-size: .9rem;
+    color: silver; }
+
+/*
+  ========================================
+	HERO
+  ========================================
+*/
+.hero {
+  display: flex;
+  align-items: center;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  background-color: purple;
+  clip-path: polygon(0% 0%, 100% 0, 100% 82%, 51% 94%, 0% 100%);
+  width: 100%;
+  filter: grayscale(50%);
+  height: 80vh; }
+  .hero .img {
+    position: relative;
+    height: 240px;
+    width: 240px;
+    display: flex;
+    left: 10%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 5px solid black; }
+    .hero .img .overlay {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 230px;
+      width: 230px;
+      border-radius: 50%; }
+      .hero .img .overlay .img-mine {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        display: none;
+        z-index: 500;
+        background-image: url("../media/Sad.png");
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .hero .img .overlay:hover .img-mine {
+        display: inline-block; }
+  .hero .container {
+    display: flex;
+    justify-items: flex-end; }
+  .hero .hero-container {
+    position: absolute;
+    right: 5%;
+    max-width: 50%; }
+    .hero .hero-container h1 {
+      font-size: 3rem;
+      letter-spacing: .20rem;
+      color: wheat; }
+    .hero .hero-container button {
+      height: 3.8rem;
+      width: 30%;
+      margin: 25px 0;
+      font-size: 1.1rem;
+      padding-bottom: 4px;
+      border-radius: 13px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      background: purple;
+      color: wheat;
+      transition: .2s; }
+    .hero .hero-container i {
+      font-size: 1.8rem;
+      color: papayawhip;
+      margin-left: 10px; }
+  .hero button:hover {
+    background-color: palevioletred; }
+
+/*
+  ========================================
+	PROJECTS
+  ========================================
+*/
+.projects {
+  display: grid;
+  padding: 3rem;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 40px;
+  margin-bottom: 40px;
+  filter: grayscale(40%); }
+
+.projects_ {
+  height: auto;
+  width: 80%;
+  border: 1px solid white;
+  transition: .5s; }
+  .projects_ img {
+    width: 100%;
+    height: auto; }
+
+.project_heading {
+  grid-column: -1 / 1; }
+  .project_heading h2 {
+    font-size: 2.5rem;
+    color: purple;
+    filter: grayscale(90%); }
+  .project_heading .border_line {
+    margin: 0 auto;
+    width: 100%;
+    margin: 20px 0;
+    height: 10px;
+    border: 4px solid purple;
+    border-radius: 50%;
+    filter: grayscale(50%); }
+
+.btn {
+  margin: 10px 0;
+  text-align: center; }
+  .btn button {
+    width: 60%;
+    border: none;
+    height: 3rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    transition: .8s; }
+  .btn button:hover {
+    background-color: wheat;
+    filter: grayscale(25%);
+    height: 2.8rem;
+    width: 40%; }
+
+/*
+  ========================================
+	SKILL
+  ========================================
+*/
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  height: 80vh;
+  padding: 40px;
+  justify-items: center;
+  background-color: purple;
+  filter: grayscale(50%); }
+  .skills .skills_heading {
+    grid-column: -1 / 1; }
+  .skills h2 {
+    font-size: 2.5rem;
+    color: wheat; }
+  .skills p {
+    color: wheat;
+    font-size: 1.5rem; }
+  .skills .border_line-skills {
+    margin: 0 auto;
+    width: 100%;
+    margin: 15px 0;
+    height: 10px;
+    border: 4px solid wheat;
+    border-radius: 50%; }
+  .skills .icon {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid wheat;
+    position: relative;
+    color: wheat; }
+  .skills .icon:hover {
+    background-color: bisque; }
+    .skills .icon:hover i {
+      color: purple;
+      filter: grayscale(40%);
+      font-size: 50px; }
+  .skills h3 {
+    font-size: 2rem;
+    color: wheat;
+    margin: 10px 0; }
+  .skills i {
+    font-size: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s; }
+
+/*
+  ========================================
+	SPECIALIZATION
+  ========================================
+*/
+.special {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  height: 40vh;
+  padding: 40px;
+  justify-items: center;
+  background-color: wheat; }
+  .special .special_icon {
+    font-size: 7rem;
+    border: 1px solid wheat;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    transition-property: width, height;
+    transition-duration: .5s; }
+    .special .special_icon i {
+      font-size: 100px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: grey;
+      transition-duration: .5s; }
+  .special .special_icon:hover {
+    background-color: purple;
+    filter: grayscale(40%); }
+    .special .special_icon:hover i:hover {
+      color: wheat;
+      font-size: 80px; }
+
+/*
+  ========================================
+	FOOTER
+  ========================================
+*/
+
+/*# sourceMappingURL=style.css.map */
