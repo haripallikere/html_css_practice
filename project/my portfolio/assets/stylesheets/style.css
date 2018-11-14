@@ -61,8 +61,8 @@ body {
 .nav-header {
   width: 100%;
   z-index: 100;
-  height: 80px;
-  padding: .20rem;
+  height: 3rem;
+  padding: .10rem;
   background-color: transparent;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
 
@@ -83,8 +83,8 @@ body {
   .container .toggle-screen {
     display: none; }
   .container img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     padding-bottom: 10px; }
   .container li {
     display: inline-block;
@@ -93,7 +93,8 @@ body {
     color: grey;
     padding-bottom: 10px; }
   .container li:hover {
-    color: white; }
+    color: white;
+    cursor: pointer; }
   .container span {
     align-self: center;
     margin-left: .50rem;
@@ -109,45 +110,46 @@ body {
   display: flex;
   align-items: center;
   background-position: bottom;
-  background-size: cover;
   position: relative;
-  background-color: purple;
+  background: linear-gradient(rgba(42, 37, 42, 0.3), rgba(32, 29, 32, 0.5)), url(../media/markus-spiske-109588-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   clip-path: polygon(0% 0%, 100% 0, 100% 82%, 51% 94%, 0% 100%);
   width: 100%;
   filter: grayscale(50%);
   height: 80vh; }
   .hero .img {
     position: relative;
-    height: 240px;
-    width: 240px;
+    height: 15rem;
+    width: 15rem;
     display: flex;
     left: 10%;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 5px solid black; }
-    .hero .img .overlay {
+    border: 5px solid pink; }
+    .hero .img .overlay .img-mine {
       position: absolute;
+      width: 14rem;
+      height: 14rem;
+      background-image: url(../media/logo.png);
+      background-size: cover;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
-      height: 230px;
-      width: 230px;
-      border-radius: 50%; }
-      .hero .img .overlay .img-mine {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        display: none;
-        z-index: 500;
-        background-image: url("../media/Sad.png");
-        background-size: cover;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-      .hero .img .overlay:hover .img-mine {
-        display: inline-block; }
+      transition: all 0.2s ease-in-out;
+      animation: ripple 2.0s 0.2s infinite;
+      -webkit-animation: ripple 2.0s 0.2s  infinite; }
+@-webkit-keyframes ripple {
+  20% {
+    box-shadow: 0px 0px 0px 6px #fff, 0px 0px 0px 20px purple; }
+  50% {
+    box-shadow: 0px 0px 0px 6px #fff, 0px 0px 0px 25px purple, 0px 0px 0px 20px #fff, 0px 0px 2px 16px #888; }
+  100% {
+    box-shadow: 0px 0px 0px 6px #fff, 0px 0px 0px 8px purple, 0px 0px 0px 14px #fff, 0px 0px 2px 16px #888,  0px 0px 0px 22px #fff, 0px 0px 5px 24px #ddd; } }
+    .hero .img .overlay:hover .img-mine {
+      transform: translate(-50%, -50%) scale(1.1); }
   .hero .container {
     display: flex;
     justify-items: flex-end; }
@@ -158,7 +160,8 @@ body {
     .hero .hero-container h1 {
       font-size: 3rem;
       letter-spacing: .20rem;
-      color: wheat; }
+      color: wheat;
+      text-shadow: 0 0 2px purple,0 0 4px purple,0 0 6px purple,0 0 7px purple,0 0 8px purple; }
     .hero .hero-container button {
       height: 3.8rem;
       width: 30%;
@@ -169,13 +172,19 @@ body {
       border: 1px solid rgba(0, 0, 0, 0.5);
       background: purple;
       color: wheat;
-      transition: .2s; }
+      transition: all .2s linear, border .5s ease-in-out; }
     .hero .hero-container i {
       font-size: 1.8rem;
       color: papayawhip;
-      margin-left: 10px; }
+      margin-left: 10px;
+      transition: all .2s linear; }
   .hero button:hover {
-    background-color: palevioletred; }
+    background-color: palevioletred;
+    border: 3px solid red;
+    text-shadow: 0 0 2px purple; }
+    .hero button:hover i {
+      color: red;
+      transform: rotate(360deg); }
 
 /*
   ========================================
@@ -216,6 +225,11 @@ body {
     border-radius: 50%;
     filter: grayscale(50%); }
 
+.project-wrapper img {
+  transform-origin: 0.4s; }
+.project-wrapper img:hover {
+  width: 60%; }
+
 .btn {
   margin: 10px 0;
   text-align: center; }
@@ -225,7 +239,7 @@ body {
     height: 3rem;
     font-family: sans-serif;
     font-size: 1rem;
-    transition: .8s; }
+    transition: .4s; }
   .btn button:hover {
     background-color: wheat;
     filter: grayscale(25%);
@@ -241,16 +255,18 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  height: 80vh;
+  height: 60vh;
   padding: 40px;
   justify-items: center;
-  background-color: purple;
-  filter: grayscale(50%); }
+  background-image: linear-gradient(rgba(17, 16, 17, 0.3), rgba(36, 31, 36, 0)), url(../media/apoorv-mittal-1079047-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
   .skills .skills_heading {
     grid-column: -1 / 1; }
   .skills h2 {
     font-size: 2.5rem;
-    color: wheat; }
+    color: wheat;
+    text-shadow: 0 0 5px grey; }
   .skills p {
     color: wheat;
     font-size: 1.5rem; }
@@ -270,9 +286,10 @@ body {
     position: relative;
     color: wheat; }
   .skills .icon:hover {
-    background-color: bisque; }
+    background: purple;
+    filter: grayscale(50%); }
     .skills .icon:hover i {
-      color: purple;
+      color: whitesmoke;
       filter: grayscale(40%);
       font-size: 50px; }
   .skills h3 {
@@ -294,9 +311,9 @@ body {
 */
 .special {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
-  height: 40vh;
+  height: 30vh;
   padding: 40px;
   justify-items: center;
   background-color: wheat; }
@@ -324,10 +341,41 @@ body {
       color: wheat;
       font-size: 80px; }
 
+ /*
+========================================
+		About
+========================================
+		*/
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  grid-gap: 25px; }
+  .about h3 {
+    margin-bottom: 20px;
+    font-size: 2rem; }
+
+.about-me_img {
+  width: 100%;
+  text-align: center; }
+  .about-me_img img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%; }
+
 /*
   ========================================
 	FOOTER
   ========================================
 */
+.footer {
+  height: 30rem;
+  background-image: url(../media/footer1.jpg);
+  background-size: cover;
+  filter: grayscale(60%);
+  background-attachment: fixed; }
 
 /*# sourceMappingURL=style.css.map */
